@@ -1,32 +1,31 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-    require: [path.join(__dirname, 'src/global.css')],
-    components: ['src/new_components/**/*.{ts,tsx}', 'src/new_containers/**/*.{ts,tsx}'],
+    require: [path.join(__dirname, "src/global.css")],
 
     styles: {
         StyleGuide: {
             content: {
-                maxWidth: 'auto'
-            }
+                maxWidth: "auto",
+            },
         },
         Playground: {
             preview: {
-                overflowX: 'auto'
-            }
-        }
+                overflowX: "auto",
+            },
+        },
     },
     sections: [
         {
-            name: 'Main',
-            content: 'pages/main.md',
+            name: "Main",
+            // content: 'pages/main.md',
             sections: [
                 {
-                    name: 'Sample',
-                    content: 'pages/sample.md'
-                }
-            ]
+                    name: "Flex Box Tricks",
+                    content: "pages/flex-box-tricks.md",
+                },
+            ],
             // components: ['src/components/**/*.{js,jsx}']
         },
-    ]
+    ],
 };
